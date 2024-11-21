@@ -1,5 +1,7 @@
-build:
-  type: node
-  node_version: "v18.16.0"
-  build_command: "npm run build"
-  start_command: "serve -s build"
+services:
+  - type: web
+    name: frontend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
