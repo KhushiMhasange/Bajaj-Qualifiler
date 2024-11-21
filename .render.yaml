@@ -1,0 +1,5 @@
+build:
+  type: node
+  node_version: "16.x"  # You can specify the Node.js version you want
+  build_command: "npm run build"
+  start_command: "serve -s build"
